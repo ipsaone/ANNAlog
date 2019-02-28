@@ -1,0 +1,67 @@
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.321Z"}
+{"reqid":"302425ff-bac7-4a70-87f5-ee8fb8293703","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.332Z"}
+{"message":"Login controller invoked","level":"info","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.333Z"}
+{"message":"Validating schema","level":"debug","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.338Z"}
+{"username":"login_test","level":"info","message":"Logging in","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.338Z"}
+{"username":"login_test","level":"debug","message":"Finding user","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.339Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"b050b105-8080-4078-8191-464a1a79e229"}},"timestamp":"2019-02-22T09:18:51.391Z"}
+{"reqid":"b050b105-8080-4078-8191-464a1a79e229","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"b050b105-8080-4078-8191-464a1a79e229"}},"timestamp":"2019-02-22T09:18:51.393Z"}
+{"reqid":"b050b105-8080-4078-8191-464a1a79e229","level":"info","message":"Request rejected (not logged in)","label":{"transactionInfo":{"requestId":"b050b105-8080-4078-8191-464a1a79e229"}},"timestamp":"2019-02-22T09:18:51.393Z"}
+{"elapsedTimeInMs":9.069944,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"b050b105-8080-4078-8191-464a1a79e229"}},"timestamp":"2019-02-22T09:18:51.401Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"d3d6a3cf-1c9c-4c6b-bd38-f2e5d0f9e677"}},"timestamp":"2019-02-22T09:18:51.406Z"}
+{"reqid":"d3d6a3cf-1c9c-4c6b-bd38-f2e5d0f9e677","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"d3d6a3cf-1c9c-4c6b-bd38-f2e5d0f9e677"}},"timestamp":"2019-02-22T09:18:51.407Z"}
+{"level":"debug","message":"Checking login","label":{"transactionInfo":{"requestId":"d3d6a3cf-1c9c-4c6b-bd38-f2e5d0f9e677"}},"timestamp":"2019-02-22T09:18:51.407Z"}
+{"elapsedTimeInMs":2.958604,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"d3d6a3cf-1c9c-4c6b-bd38-f2e5d0f9e677"}},"timestamp":"2019-02-22T09:18:51.409Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.412Z"}
+{"reqid":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.413Z"}
+{"message":"Login controller invoked","level":"info","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.414Z"}
+{"message":"Validating schema","level":"debug","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.414Z"}
+{"username":"login_test","level":"info","message":"Logging in","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.414Z"}
+{"username":"login_test","level":"debug","message":"Finding user","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.415Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.466Z"}
+{"reqid":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.467Z"}
+{"message":"Login controller invoked","level":"info","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.468Z"}
+{"message":"Validating schema","level":"debug","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.468Z"}
+{"username":"login_test","level":"info","message":"Logging in","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.468Z"}
+{"username":"login_test","level":"debug","message":"Finding user","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.469Z"}
+{"message":"Comparing hashes","level":"debug","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.480Z"}
+{"message":"Comparing hashes","level":"debug","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.495Z"}
+{"message":"Comparing hashes","level":"debug","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.505Z"}
+{"message":"Password accepted","level":"debug","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.916Z"}
+{"userId":1,"level":"info","message":"Login successful","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.916Z"}
+{"elapsedTimeInMs":508.366837,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"658d06f9-1a7f-43c1-b2e4-47fefeb34fc3"}},"timestamp":"2019-02-22T09:18:51.921Z"}
+{"message":"Password accepted","level":"debug","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.928Z"}
+{"userId":1,"level":"info","message":"Login successful","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.928Z"}
+{"message":"Password accepted","level":"debug","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.931Z"}
+{"userId":1,"level":"info","message":"Login successful","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.931Z"}
+{"elapsedTimeInMs":608.827372,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"302425ff-bac7-4a70-87f5-ee8fb8293703"}},"timestamp":"2019-02-22T09:18:51.934Z"}
+{"elapsedTimeInMs":468.204494,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"f92f831d-81e8-4bb1-bac7-57f74c5fcb81"}},"timestamp":"2019-02-22T09:18:51.935Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"c177428d-d83c-425a-a2fd-127cb0f0e49e"}},"timestamp":"2019-02-22T09:18:51.939Z"}
+{"reqid":"c177428d-d83c-425a-a2fd-127cb0f0e49e","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"c177428d-d83c-425a-a2fd-127cb0f0e49e"}},"timestamp":"2019-02-22T09:18:51.943Z"}
+{"logged":1,"level":"debug","message":"Checking login","label":{"transactionInfo":{"requestId":"c177428d-d83c-425a-a2fd-127cb0f0e49e"}},"timestamp":"2019-02-22T09:18:51.944Z"}
+{"elapsedTimeInMs":8.10523,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"c177428d-d83c-425a-a2fd-127cb0f0e49e"}},"timestamp":"2019-02-22T09:18:51.947Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.950Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"62cec2cf-25f1-4f25-a659-599ad13d938b"}},"timestamp":"2019-02-22T09:18:51.952Z"}
+{"reqid":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.956Z"}
+{"message":"Login controller invoked","level":"info","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.957Z"}
+{"message":"Validating schema","level":"debug","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.957Z"}
+{"username":"login_test","level":"info","message":"Logging in","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.958Z"}
+{"username":"login_test","level":"debug","message":"Finding user","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.958Z"}
+{"reqid":"62cec2cf-25f1-4f25-a659-599ad13d938b","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"62cec2cf-25f1-4f25-a659-599ad13d938b"}},"timestamp":"2019-02-22T09:18:51.959Z"}
+{"reqid":"62cec2cf-25f1-4f25-a659-599ad13d938b","level":"debug","message":"User is logged. Request allowed","label":{"transactionInfo":{"requestId":"62cec2cf-25f1-4f25-a659-599ad13d938b"}},"timestamp":"2019-02-22T09:18:51.959Z"}
+{"message":"Logout controller invoked","level":"info","label":{"transactionInfo":{"requestId":"62cec2cf-25f1-4f25-a659-599ad13d938b","userId":1,"sessionId":"M-JzQWr5c8nsHCs2QYZNLWJW7Y5QTOY0"}},"timestamp":"2019-02-22T09:18:51.959Z"}
+{"message":"Logout successful","level":"info","label":{"transactionInfo":{"requestId":"62cec2cf-25f1-4f25-a659-599ad13d938b","userId":1,"sessionId":"M-JzQWr5c8nsHCs2QYZNLWJW7Y5QTOY0"}},"timestamp":"2019-02-22T09:18:51.959Z"}
+{"elapsedTimeInMs":13.559986,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"62cec2cf-25f1-4f25-a659-599ad13d938b","userId":1,"sessionId":"M-JzQWr5c8nsHCs2QYZNLWJW7Y5QTOY0"}},"timestamp":"2019-02-22T09:18:51.966Z"}
+{"message":"Comparing hashes","level":"debug","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:51.972Z"}
+{"message":"Password refused","level":"debug","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:52.112Z"}
+{"message":"Login failed","level":"debug","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:52.112Z"}
+{"elapsedTimeInMs":164.052728,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"c2516d76-4a34-47f8-81f5-b12ce6e5bbcd"}},"timestamp":"2019-02-22T09:18:52.115Z"}
+{"message":"Transaction created successfully","level":"debug","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.120Z"}
+{"reqid":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732","level":"debug","message":"Check if user is logged in.","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.121Z"}
+{"message":"Login controller invoked","level":"info","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.122Z"}
+{"message":"Validating schema","level":"debug","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.122Z"}
+{"username":"login_test8","level":"info","message":"Logging in","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.123Z"}
+{"username":"login_test8","level":"debug","message":"Finding user","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.123Z"}
+{"message":"User not found","level":"error","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.150Z"}
+{"message":"Login failed","level":"warning","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.150Z"}
+{"elapsedTimeInMs":34.901599,"level":"debug","message":"response time measured","label":{"transactionInfo":{"requestId":"c795d264-e6e4-4eaa-8c67-ed60dc2c0732"}},"timestamp":"2019-02-22T09:18:52.155Z"}
