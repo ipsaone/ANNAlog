@@ -1,5 +1,6 @@
 """
 Created by Louis Etienne
+Edited by Gregoire Henry
 """
 
 import datetime
@@ -17,23 +18,26 @@ class LogManager:
             self.load_file(filename)
 
     def load_file(self, filename):
+        i = 0
         with open(filename, "r") as json_file:
                 for line in json_file.readlines():
                     line = json.loads(line)  # Parse json
                     self.append_log(line)  # Append log to the LogMananger instance
-
     def append_log(self, data):
         level = data.pop("level")
         message = data.pop("message")
         timestamp = datetime.datetime.strptime(data.pop("timestamp"), log_timestamp_format)
-        request_id = data.pop("label")["transactionInfo"]["requestId"]
-
+        if "label" in data.keys():
+            request_id = data.pop("label")["transactionInfo"]["requestId"]
+        else:
+            request_id = data
+        
         user_id = None
         if "userId" in data:
             user_id = data.pop("userId")
 
         log = Log(level, message, timestamp, request_id, user_id)
-
+        
         self.logs[log.id] = log
 
     def count(self, log_level=None):
