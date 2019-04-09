@@ -18,11 +18,11 @@ class LogManager:
             self.load_file(filename)
 
     def load_file(self, filename):
-        i = 0
         with open(filename, "r") as json_file:
                 for line in json_file.readlines():
                     line = json.loads(line)  # Parse json
                     self.append_log(line)  # Append log to the LogMananger instance
+
     def append_log(self, data):
         level = data.pop("level")
         message = data.pop("message")
