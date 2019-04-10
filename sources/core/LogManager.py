@@ -1,5 +1,6 @@
 """
 Created by Louis Etienne
+Edited by Gregoire Henry
 """
 
 import datetime
@@ -26,14 +27,17 @@ class LogManager:
         level = data.pop("level")
         message = data.pop("message")
         timestamp = datetime.datetime.strptime(data.pop("timestamp"), log_timestamp_format)
-        request_id = data.pop("label")["transactionInfo"]["requestId"]
-
+        if "label" in data.keys():
+            request_id = data.pop("label")["transactionInfo"]["requestId"]
+        else:
+            request_id = data
+        
         user_id = None
         if "userId" in data:
             user_id = data.pop("userId")
 
         log = Log(level, message, timestamp, request_id, user_id)
-
+        
         self.logs[log.id] = log
 
     def count(self, log_level=None):
