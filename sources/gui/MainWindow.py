@@ -1,5 +1,6 @@
 """
 Created by Louis Etienne
+Edited by Gregoire Henry
 """
 
 from PyQt5.QtCore import Qt
@@ -119,9 +120,6 @@ class MainWindow(QMainWindow):
             self.log_aside.setText(log.render())
         else:
             self.log_aside.setText("")
-
-    def on_request_id_changed(self):
-        self.update_logs_table(True)
 
     def on_level_changed(self):
         self.update_logs_table(True)
