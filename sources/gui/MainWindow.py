@@ -29,7 +29,6 @@ class MainWindow(QMainWindow):
         self.update_action.triggered.connect(self.load_file)
         self.quit_action.triggered.connect(qApp.quit)
         self.about_action.triggered.connect(self.on_about_action)
-        self.request_id_entry.editingFinished.connect(self.on_request_id_changed)
 
         self.level_choice.addItem("All")
         
@@ -67,9 +66,6 @@ class MainWindow(QMainWindow):
     def update_logs_table(self, check_filter=False):
         local_log_manager = self.log_manager
 
-        # Using a local log manager avoid to reload the log file each time the user
-        # want all the logs.
-        
         if check_filter:
             if self.level_choice.currentText() != "All":
                 local_log_manager = local_log_manager.filter_level(self.level_choice.currentText().lower())
