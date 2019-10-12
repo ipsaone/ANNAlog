@@ -72,3 +72,12 @@ class LogManager:
                 log_manager.logs[log.id] = log
 
         return log_manager
+
+    def filter_search_message(self, log_message):
+        log_manager = LogManager()
+
+        for log in self.logs.values():
+            if log_message in log.message :
+                log_manager.logs[log.id] = log
+
+        return log_manager
