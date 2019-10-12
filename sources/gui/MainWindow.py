@@ -29,6 +29,8 @@ class MainWindow(QMainWindow):
         self.update_action.triggered.connect(self.load_file)
         self.quit_action.triggered.connect(qApp.quit)
         self.about_action.triggered.connect(self.on_about_action)
+        self.request_id_entry.editingFinished.connect(self.on_request_id_changed)
+        self.search_message_entry.editingFinished.connect(self.on_search_message_changed)
 
         self.level_choice.addItem("All")
         
@@ -57,6 +59,7 @@ class MainWindow(QMainWindow):
     def enable(self, state=True):
         self.level_choice.setEnabled(state)
         self.request_id_entry.setEnabled(state)
+        self.search_message_entry.setEnabled(state)
 
     def clear_logs_table(self):
         self.logs_table.setRowCount(0)
@@ -72,6 +75,10 @@ class MainWindow(QMainWindow):
             
             if len(self.request_id_entry.text()) > 0:
                 local_log_manager = local_log_manager.filter_request_id(self.request_id_entry.text())
+
+            if len(self.search_message_entry.text()) > 0:
+                print('message: %s' % self.search_message_entry.text())
+                local_log_manager = local_log_manager.filter_search_message(self.search_message_entry.text())
 
         self.clear_logs_table()
 
@@ -119,6 +126,14 @@ class MainWindow(QMainWindow):
 
     def on_level_changed(self):
         self.update_logs_table(True)
+
+    def on_request_id_changed(self):
+        #self.update_logs_table()
+        pass
+
+    def on_search_message_changed(self):
+        #self.update_logs_table()
+        pass
 
     def on_about_action(self):
         about_dialog = About()
