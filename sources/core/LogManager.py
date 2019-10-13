@@ -3,6 +3,7 @@ Created by Louis Etienne
 Edited by Gregoire Henry
 """
 
+import sys
 import datetime
 import json
 
@@ -18,25 +19,39 @@ class LogManager:
             self.load_file(filename)
 
     def load_file(self, filename):
+        nline = 0
         with open(filename, "r") as json_file:
-                for line in json_file.readlines():
+            for line in json_file.readlines():
+                try:
                     line = json.loads(line)  # Parse json
-                    self.append_log(line)  # Append log to the LogMananger instance
+                except json.decoder.JSONDecodeError as err:
+                    print("/!\\ Impossible to load log line %d" % nline)
+                    sys.exit()
+                self.append_log(line)  # Append log to the LogMananger instance
+                nline += 1
 
     def append_log(self, data):
-        level = data.pop("level")
-        message = data.pop("message")
-        timestamp = datetime.datetime.strptime(data.pop("timestamp"), log_timestamp_format)
+        level = data["level"]
+        message = data["message"]
+        timestamp = datetime.datetime.strptime(data["timestamp"], log_timestamp_format)
         if "label" in data.keys():
-            request_id = data.pop("label")["transactionInfo"]["requestId"]
+            request_id = data["label"]["transactionInfo"]["requestId"]
         else:
             request_id = data
         
-        user_id = None
-        if "userId" in data:
-            user_id = data.pop("userId")
+        path = None
+        if "path" in data["label"]["transactionInfo"]:
+            path = data["label"]["transactionInfo"]["path"]
 
-        log = Log(level, message, timestamp, request_id, user_id)
+        user_id = None
+        if "userId" in data["label"]["transactionInfo"]:
+            user_id = data["label"]["transactionInfo"]["userId"] 
+                
+        session_id = None
+        if "sessionId" in data["label"]["transactionInfo"]:
+            session_id = data["label"]["transactionInfo"]["requestId"]
+
+        log = Log(level, message, timestamp, request_id, path, user_id, session_id)
         
         self.logs[log.id] = log
 
@@ -72,8 +87,18 @@ class LogManager:
                 log_manager.logs[log.id] = log
 
         return log_manager
+    
+    def filter_session_id(self, log_session_id):
+        log_manager = LogManager()
 
-    def filter_search_message(self, log_message):
+        for log in self.logs.values():
+            if log.session_id == log_session_id:
+                log_manager.logs[log.id] = log
+
+        return log_manager
+
+
+    def filter_message(self, log_message):
         log_manager = LogManager()
 
         for log in self.logs.values():
