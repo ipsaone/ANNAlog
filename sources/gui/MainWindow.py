@@ -30,7 +30,8 @@ class MainWindow(QMainWindow):
         self.quit_action.triggered.connect(qApp.quit)
         self.about_action.triggered.connect(self.on_about_action)
         self.request_id_entry.editingFinished.connect(self.on_request_id_changed)
-        self.search_message_entry.editingFinished.connect(self.on_search_message_changed)
+        self.session_id_entry.editingFinished.connect(self.on_session_id_changed)
+        self.message_entry.editingFinished.connect(self.on_message_changed)
 
         self.level_choice.addItem("All")
         
@@ -45,7 +46,7 @@ class MainWindow(QMainWindow):
             self.load_file()
 
     def on_open_action(self):
-        filename = QFileDialog.getOpenFileName(self, "Open file", "./", "Log files(*.log *.json)")
+        filename = QFileDialog.getOpenFileName(self, "Open file", "./", "Log files(*.log *.log.* *.json)")
 
         if filename[0]:
             self.filename = filename[0]
@@ -59,7 +60,8 @@ class MainWindow(QMainWindow):
     def enable(self, state=True):
         self.level_choice.setEnabled(state)
         self.request_id_entry.setEnabled(state)
-        self.search_message_entry.setEnabled(state)
+        self.session_id_entry.setEnabled(state)
+        self.message_entry.setEnabled(state)
 
     def clear_logs_table(self):
         self.logs_table.setRowCount(0)
@@ -76,9 +78,11 @@ class MainWindow(QMainWindow):
             if len(self.request_id_entry.text()) > 0:
                 local_log_manager = local_log_manager.filter_request_id(self.request_id_entry.text())
 
-            if len(self.search_message_entry.text()) > 0:
-                print('message: %s' % self.search_message_entry.text())
-                local_log_manager = local_log_manager.filter_search_message(self.search_message_entry.text())
+            if len(self.session_id_entry.text()) > 0:
+                local_log_manager = local_log_manager.filter_session_id(self.session_id_entry.text())
+
+            if len(self.message_entry.text()) > 0:
+                local_log_manager = local_log_manager.filter_message(self.message_entry.text())
 
         self.clear_logs_table()
 
@@ -130,8 +134,12 @@ class MainWindow(QMainWindow):
     def on_request_id_changed(self):
         #self.update_logs_table()
         pass
+    
+    def on_session_id_changed(self):
+        #self.update_logs_table()
+        pass
 
-    def on_search_message_changed(self):
+    def on_message_changed(self):
         #self.update_logs_table()
         pass
 
